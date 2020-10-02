@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/pembayaran.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <style class="cp-pen-styles"></style>
+</head>
+<style type="text/css">
+
+.panel-transaksi{
+      border: 1px solid grey;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: box-shadow 0.5s;
+}
+
+.panel-transaksi:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2) 
+}
+
+  #container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  padding: 2rem;
+  width: 1000px;
+}
+
+form {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+
+.btn-block{
+  border-radius: 0px;
+}
+
+/*.country-flag {
+  border-radius: 4px;
+  height: 60px;
+  margin-bottom: 5px;
+  width: 80px;
+}*/
+
+input {
+  cursor: pointer;
+  display: none;
+  margin: 0 auto;
+}
+
+.active {
+  background: #f1f1f1;
+}
+
+#internet-content,
+#mobile-content,
+#klik-content,
+#bankbca,
+#bankbni,
+#bankbri {
+  display: none;
+}
+
+
+
+</style>
+</head>
+<body id="page" data-spy="scroll">
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="indexs.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+<!-- MODAL MELAKUKAN PEMBAYARAN -->
+  <div class="modal fade" id="pembayaran" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3 style="text-align: center;"><span class="glyphicon"></span> Invoice</h3>
+          </div>
+
+          <div class="modal-body">
+          You will be invested for :
+          <br><br>
+          <table class="table table-hover table-bordered">
+          
+            <thead>
+              <tr class="success">
+                <th>Plant Type</th>
+                <th>Total Plants</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Durian</td>
+                <td>1</td>
+                <td>Rp 1.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr>
+
+          <p style="text-align: center; border: 2px solid #f1f1f1; background:#f6f6f6 "><br><b>Do the payment through :</b><br> <img src="pics/bank.jpg" class="img-responsive" style="width: 200px; height: 100px; text-align: center; margin-left: auto; margin-right: auto; display: block;" ><br>
+          No Rek: 432 456 754<br>
+          Name: Tanaman In<br><br>
+           </p>
+          </div>
+
+          <div class="modal-footer">
+          <div style="font-size: 13px" ><i>Press the button to see all of your plants </i>
+             <a href="detail transaction.html" class="btn btn-primary btn-detail ">
+                <span class="glyphicon "></span> Detail Plants Transaction</a>             </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+
+<!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+
+<div class="container-fluid">
+	<div class="pembayaran">Payment Method</div>
+</div>
+
+<div class="container-fluid">
+	<div class="panel panel-body text-center ">
+		<h3> Choose your payment</h3> <br>
+		
+		<form>
+		  <div class="radio-button active">
+          <label for="tab-btn-4">
+              <div class="rekening text-left">
+              <img src="pics/visa.png" class="img-responsive" style="width: 200px; height: 100px">
+                <br>
+<!--                 <p>No Rekening: <i>432 456 754</i><br>
+                Atas Nama: <i>Tanaman In</i></p> -->
+              </div>
+            </label>
+		    <input type="radio" name="country" value="ATM" checked>
+		  </div>
+
+		  <div class="radio-button">
+            <label for="tab-btn-4">
+              <div class="rekening text-left">
+
+               <img src="pics/paypal.jpg" class="img-responsive" style="width: 200px; height: 100px">
+                <br>
+           <!--      <p>No Rekening: <i>432 456 754</i><br>
+                Atas Nama: <i>Tanaman In</i></p> -->
+              </div>
+            </label>
+		    <input type="radio" name="country" value="INTERNET">
+		  </div>
+
+		  <div class="radio-button">
+            <label for="tab-btn-4">
+              <div class="rekening text-left">
+                            <img src="pics/bank.jpg" class="img-responsive" style="width: 200px; height: 100px" >
+                <br>
+<!--                 <p>No Rekening: <i>432 456 754</i><br>
+                Atas Nama: <i>Tanaman In</i></p> -->
+              </div>
+            </label>
+		    <input type="radio" name="country" value="MOBILE">
+		  </div>
+
+		  <div class="radio-button">
+		    <!-- <h4>Bank DDDD</h4> -->
+            <label for="tab-btn-4">
+              <div class="rekening text-left">
+               <img src="pics/master.jpg" class="img-responsive" style="width: 200px; height: 100px" >
+                <br>
+  <!--               <p>No Rekening: <i>432 456 754</i><br>
+                Atas Nama: <i>Tanaman In</i></p> -->
+              </div>
+            </label>
+		    <input type="radio" name="country" value="KLIK">
+		  </div>
+		</form>
+
+    <div class="petunjuk text-left">
+    <br>
+      <h4><b>Payment Instructions </b></h4>
+
+        <p>
+        <div class="col-sm-1">1.</div>
+            <div class="col-sm-11">Choose One Payment Method</div><br>
+        <div class="col-sm-1">2.</div>
+            <div class="col-sm-11">After you paid, you will get notification as soon as possible. If notification for your payment not show up. Do manual confirmation by sending your proofment. </div><br>
+        
+        <div class="col-sm-1">3.</div>
+            <div class="col-sm-11">Your booking will be automatically canceled if you dont pay until 2 days later.</div><br>
+        </p>  
+    </div>
+
+<!-- 		<div class="perbankan" id="atm-content">
+		  <br>
+		  <h3>Pilih Perbankan Yang Anda Gunakan</h3> -->
+<!-- 		    <form>    	
+				<div class="tabs">
+				  <input type="radio" name="tab" id="tab-btn-1" checked/>
+				  	<label for="tab-btn-1"><img src="pics/Bank/Mandiri.png">
+              <div class="rekening text-left">
+              <br>
+              <p>No Rekening: <i>123 567 789</i><br>
+              Atas Nama: <i>Tanaman In</i></p>
+              </div>
+            </label>
+
+				  <input type="radio" name="tab" id="tab-btn-2" />
+				  	<label for="tab-btn-2"><img src="pics/Bank/BCA.png">
+              <div class="rekening text-left">
+                <br>
+                <p>No Rekening: <i>232 445 221</i><br>
+                Atas Nama: <i>Tanaman In</i></p>
+                </div>
+            </label>
+
+				  <input type="radio" name="tab" id="tab-btn-3" />
+				  	<label for="tab-btn-3"><img src="pics/Bank/BNI.png">
+              <div class="rekening text-left">
+                <br>
+                <p>No Rekening: <i>113 922 431</i><br>
+                Atas Nama: <i>Tanaman In</i></p>
+              </div>
+            </label>
+
+				  <input type="radio" name="tab" id="tab-btn-4" />
+				  	<label for="tab-btn-4"><img src="pics/Bank/BRI2.png">
+              <div class="rekening text-left">
+                <br>
+                <p>No Rekening: <i>432 456 754</i><br>
+                Atas Nama: <i>Tanaman In</i></p>
+              </div>
+            </label>
+			</form>
+			</div>
+ -->
+<!-- 		<div id="mobile-content">
+		  <br>
+		  <h4>Pilih Perbankan Yang Anda Gunakan</h4>
+		    <form>
+		      <div class="bank-button active">
+		        <h4>Mandiri </h4>
+		        <input type="radio" name="country" value="MANDIRI" checked>
+		      </div>
+
+		      <div class="bank-button">
+		        <h4>Internet Banking</h4>
+		        <input type="radio" name="country" value="BCA">
+		      </div>
+
+		      <div class="bank-button">
+		        <h4>Mobile Banking</h4>
+		        <input type="radio" name="country" value="BNI">
+		      </div>
+
+		      <div class="bank-button">
+		        <h4>Klik Banking</h4>
+		        <input type="radio" name="country" value="BRI">
+		      </div>
+		    </form>
+		</div>
+	  
+		<div id="klik-content">
+		  <br>
+		  <h4>Pilih Perbankan Yang Anda Gunakan</h4>
+		    <form>
+		      <div class="bank-button active">
+		        <h4>Mandiri </h4>
+		        <input type="radio" name="country" value="MANDIRI" checked>
+		      </div>
+
+		      <div class="bank-button">
+		        <h4>Internet Banking</h4>
+		        <input type="radio" name="country" value="BCA">
+		      </div>
+
+		      <div class="bank-button">
+		        <h4>Mobile Banking</h4>
+		        <input type="radio" name="country" value="BNI">
+		      </div>
+
+		      <div class="bank-button">
+		        <h4>Klik Banking</h4>
+		        <input type="radio" name="country" value="BRI">
+		      </div>
+	    	</form>
+	  	</div> -->
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="form-group">
+	  	<label for="disabledTextInput" class="col-sm-offset-1 col-sm-3 control-label"><h4>Cost for 1 Plant</h4></label>
+		<div class="col-sm-6">
+		  <input type="text" id="disabledTextInput" class="form-control input-lg" placeholder="Rp 1.500.000" disabled>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="col-sm-offset-4 col-sm-4">
+		<button class="btn btn-primary btn-block btn-lg" style="align:center" data-toggle="modal" data-target="#pembayaran">INVEST NOW</button> 
+	</div>
+</div>
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+<script src="js/animslide.js"></script>
+<script src="js/pembayaran.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/conditions.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/modalmasuk.css" rel="stylesheet" type="text/css"> -->
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--   <script src="js/jquery.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <style class="cp-pen-styles"></style>
+  <script type="text/javascript" src="//thingspeak.com/highcharts-3.0.8.js"></script>
+  <script type="text/javascript" src="//thingspeak.com/exporting.js"></script>
+
+</head>
+
+<body id="page" data-spy="scroll">
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="indexs.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+ <!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+<div class="container-fluid">
+  <div class="jdul">
+    <h2> Condition for plant A</h2>
+    <br>
+  </div>
+
+
+<!--   <div class="col-sm-3"><br><br>
+      <a href="datadiri.html"> <button type="button" class="btn btn-danger btn-block btn-lg" > Profile</button></a>
+      <a href="pohonsaya.html"> <button type="button" class="btn btn-success btn-block btn-lg">Fields </button></a>
+      <a href="detaildonasi.html"> <button type="button" class="btn btn-primary btn-block btn-lg">Detail Transactions</button></a>
+      
+  </div>
+<br><br> -->
+
+  <div class="col-sm-12">
+
+    <div class="tabel">
+
+
+      <div class="panel-body">
+      <div class="tulisannya"><h3>Weather</h3></div>
+       
+        <img src="pics/weather.PNG" class="img-responsive" style="width: 60%;">
+        <hr>
+      <div class="tulisannya"><h3>Sensor</h3></div>
+      <div class="tabel1">
+<!--       <div id="chart-container">
+
+        <img alt="Ajax loader" src="//thingspeak.com/assets/loader-transparent.gif" style="position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;" />
+      </div> -->
+    <!-- <div class="uiframe" style="margin-left: 3%"> -->
+    <div class="col-sm-12">
+    <div class="col-sm-6">
+      <div class="panel-body">
+      <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/338953/charts/1?dynamic=true"></iframe>
+      
+        <h3 style="text-align: center;">Humidity</h3>   
+        <div class="huruf">
+        Humidity: 1023 cmHg<br>
+        Information : Good Condition for plants
+    </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-6">
+      <div class="panel-body">
+      <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/338953/charts/2?dynamic=true"></iframe>
+          <h3 style="text-align: center;">Moisture</h3>
+          <div class="huruf">
+          Moisture: 1021<br>
+          Information :    Very well condition for plants
+      </div></div>
+    </div>
+
+   </div>
+    <!-- <div class="tulisannya"><h3>Foto Tanaman Berkala</h3></div> -->
+
+
+    </div>
+
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+<script src="js/animslide.js"></script>
+<script type="text/javascript">
+  // variables for the first series
+  var series_1_channel_id = 9;
+  var series_1_field_number = 1;
+  var series_1_read_api_key = 'C53ZJC0KMK1WOS4N';
+  var series_1_results = 10;
+  var series_1_color = '#d62020';
+
+  // variables for the second series
+  var series_2_channel_id = 9;
+  var series_2_field_number = 2;
+  var series_2_read_api_key = 'C53ZJC0KMK1WOS4N';
+  var series_2_results = 10;
+  var series_2_color = '#00aaff';
+
+  // chart title
+  var chart_title = 'Light & Temperature';
+  // y axis title
+  var y_axis_title = 'Values';
+
+  // user's timezone offset
+  var my_offset = new Date().getTimezoneOffset();
+  // chart variable
+  var my_chart;
+
+  // when the document is ready
+  $(document).on('ready', function() {
+    // add a blank chart
+    addChart();
+    // add the first series
+    addSeries(series_1_channel_id, series_1_field_number, series_1_read_api_key, series_1_results, series_1_color);
+    // add the second series
+    addSeries(series_2_channel_id, series_2_field_number, series_2_read_api_key, series_2_results, series_2_color);
+  });
+
+  // add the base chart
+  function addChart() {
+    // variable for the local date in milliseconds
+    var localDate;
+
+    // variable for the last date added to the chart 
+    var last_date;
+    var last_median;
+    var last_sum;
+    var last_average;
+    // specify the chart options
+    var chartOptions = {
+      chart: {
+        renderTo: 'chart-container',
+        defaultSeriesType: 'line',
+        backgroundColor: '#ffffff',
+        events: { 
+          load:function(){
+                    var url = 'https://api.thingspeak.com/channels/' + channel_id + '/feed/'  +'/last.json?offset=0&location=true&results=' + results + '&api_key=' + api_key;
+                    if (last_average.length > 0) {
+                      url = 'https://api.thingspeak.com/channels/' + channel_id + '/feed/'  +'/last_average.json?offset=0&location=true&average=' + 10 + '&api_key=' + api_key ;
+                    } else if (last_median.length > 0) {
+                      url = 'https://api.thingspeak.com/channels/' + channel_id + '/feed/'  +'/last_median.json?offset=0&location=true&median=' + 10 + '&api_key=' + api_key;
+                    } else if (last_sum.length > 0) {
+                      url = 'https://api.thingspeak.com/channels/' + channel_id + '/feed/'  +'/last_sum.json?offset=0&location=true&sum=' + 10 + '&api_key=' + api_key ;
+                    }
+
+
+                    if ('true' === dynamic && (timescale.length < 1)) {
+                      // push data every 15 seconds
+                      setInterval(function() {
+                        // get the data with a webservice call if we're just getting the last channel
+                        $.getJSON(url, function(data) {
+                          // if data exists
+                          if (data && data.field=field_number) {
+                            var p = new Highcharts.Point();
+                            // set the proper values
+                            var v = data.field=field_number;
+                            p.x = getChartDate(data.created_at);
+                            p.y = parseFloat(v);
+                            // add location if possible
+                            if (data.location) { p.name = data.location; }
+                            // get the last date if possible
+                            if (dynamicChart.series[0].data.length > 0) {
+                              last_date = dynamicChart.series[0].data[dynamicChart.series[0].data.length-1].x;
+                            }
+                            var shift = true ; //default for shift
+                            //if push is requested in parameters
+                            // then if results is and data.length is < results, shift = false
+                            var results = 60;
+                            if ( results  && dynamicChart.series[0].data.length+1 >= results )   {
+                              shift = true ;
+                            }
+                            // if a numerical value exists and it is a new date, add it
+                            if (!isNaN(parseInt(v))){
+                              dynamicChart.series[0].addPoint(p, true, shift);
+                            }
+                            else {
+                              dynamicChart.series[0].data[dynamicChart.series[0].data.length-1].update(p);
+                            }
+                        }
+
+
+          }
+
+        }
+      }
+      },
+      title: { text: chart_title },
+      plotOptions: {
+        series: {
+          marker: { radius: 3 },
+          animation: true,
+          step: false,
+          borderWidth: 0,
+          turboThreshold: 0
+        }
+      },
+      tooltip: {
+        // reformat the tooltips so that local times are displayed
+        formatter: function() {
+          var d = new Date(this.x + (my_offset*60000));
+          var n = (this.point.name === undefined) ? '' : '<br>' + this.point.name;
+          return this.series.name + ':<b>' + this.y + '</b>' + n + '<br>' + d.toDateString() + '<br>' + d.toTimeString().replace(/\(.*\)/, "");
+        }
+      },
+      xAxis: {
+        type: 'datetime',
+        title: { text: 'Date' }
+      },
+      yAxis: { title: { text: y_axis_title } },
+      exporting: { enabled: false },
+      legend: { enabled: false },
+      credits: {
+        text: 'ThingSpeak.com',
+        href: 'https://thingspeak.com/',
+        style: { color: '#D62020' }
+      }
+    };
+
+    // draw the chart
+    my_chart = new Highcharts.Chart(chartOptions);
+  }
+
+  // add a series to the chart
+  function addSeries(channel_id, field_number, api_key, results, color) {
+    var field_name = 'field' + field_number;
+
+    // get the data with a webservice call
+    $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/fields/' + field_number + '.json?offset=0&round=2&results=' + results + '&api_key=' + api_key, function(data) {
+
+      // blank array for holding chart data
+      var chart_data = [];
+
+      // iterate through each feed
+      $.each(data.feeds, function() {
+        var point = new Highcharts.Point();
+        // set the proper values
+        var value = this[field_name];
+        point.x = getChartDate(this.created_at);
+        point.y = parseFloat(value);
+        // add location if possible
+        if (this.location) { point.name = this.location; }
+        // if a numerical value exists add it
+        if (!isNaN(parseInt(value))) { chart_data.push(point); }
+      });
+
+      // add the chart data
+      my_chart.addSeries({ data: chart_data, name: data.channel[field_name], color: color });
+    });
+  }
+
+  // converts date format from JSON
+  function getChartDate(d) {
+    // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
+    return Date.parse(d) - (my_offset * 60000);
+  }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

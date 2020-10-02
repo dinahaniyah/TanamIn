@@ -1,0 +1,96 @@
+body {
+	width: 100%;
+	font-family: 'Lato';
+	font-smooth: always;
+  	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e8ffd0;
+	font-size: 17px;
+
+}
+
+/*Judul Data Diri*/
+.col-sm-offset-3 h2{
+	font-size: 35px;
+}
+
+/*3 Tombol Besar*/
+.col-sm-3 a{
+	/*white-space: normal;*/
+	text-decoration: none;
+	color: white;
+}
+.col-sm-3 button{
+	margin-bottom: 3%;	
+	border-radius: 0px;
+	white-space: normal;
+}
+
+/*Bagian Data */
+.col-sm-9 {
+	border-left: solid grey;
+
+}
+
+.keterangan label{
+	text-align: left;
+}
+/*Bagian isi Data*/
+#keterangan .col-sm-6 {
+	border-bottom: solid #63B47A;
+	border-bottom-width: 2px;
+}
+
+/*tabel data*/
+.tabel {
+  background:white;
+  border-radius:6px;
+  box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+.upload {
+    position: relative;
+    overflow: hidden;
+    /*margin: 10px;*/
+}
+.upload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.fotoupload img{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	float: center;
+	text-align: center;
+}
+/*tombol perbarui*/
+#perbarui .col-sm-4 button{
+	border-radius: 0px;
+}
+
+
+.gambar{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	width: 150px;
+}
+
+.btn-warning{
+	white-space: normal;
+	border-radius: 0px;
+	font-size: 16px;
+}
+
+.datepicker{z-index:1151;}

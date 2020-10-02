@@ -1,0 +1,39 @@
+body {
+  font-family: 'Lato';
+  font-smooth: always;
+    overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e8ffd0;
+  font-size: 18px;
+}
+
+.judulHak {
+  font-size: 35px;
+}
+
+
+.panel-hak{
+    border: 0px solid grey;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    box-shadow:5px 5px 0px rgba(0,0,0,.1);
+    transition: box-shadow 0.5s;
+    padding: 2% 5% 4% 5%;
+}
+
+.sub-judul{
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+
+.col-sm-1{
+  width: 2%;
+}
+.col-sm-11{
+  width: 95% ;
+  margin-bottom: 1%; 
+  text-align: left;
+}

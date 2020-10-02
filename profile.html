@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/datepicker.css">
+  <link href="css/datadiri.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<!--   <script src="js/prefixfree.min.js"></script> -->
+  <script src="js/tanggal.js"></script>
+  <!-- <style class="cp-pen-styles"></style> -->
+</head>
+
+<body id="page" data-spy="scroll">
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index2.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+<!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+  
+<!-- MODAL PERBARUI DATA -->
+ <div class="modal fade" id="perbarui" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4>Update Data</h4>
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <div class="fotoupload"><img id="blah"></div><br>
+                <div class="upload btn btn-primary btn-block"><span>Choose new photo</span><input type="file" class="upload" onchange="readURL(this)">
+                </div>
+
+
+                
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="nama" placeholder="Update Name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Update Email">
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" name="tanggal" id="tanggal" placeholder="Update Date of Birth">
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="jeniskelamin" name="jeniskelamin">
+                  <option value="none">--  Choose your sex --</option>
+                  <option value="laki-laki">Male</option>
+                  <option value="perempuan">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="alamat" placeholder="Update Address">
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="kota" placeholder="Update City">
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="provinsi" placeholder="Update Province">
+              </div>
+
+                <hr>
+                <a href="#" style="text-decoration:none; color:black"><button class="btn btn-warning btn-block">Save</button> 
+                </a>
+              </form>
+          </div>
+
+<!--           <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-danger btn-default">Simpan</a>
+          </div>
+          </div> -->
+      </div>
+
+    </div>
+  </div>  
+
+
+<div class="container-fluid">
+  <div class="col-sm-offset-3">
+    <h2> Profile </h2><br>
+  </div>
+
+  <div class="col-sm-3">
+      <a href="profile.html"> <button type="button" class="btn btn-danger btn-block btn-lg" > Profile</button></a>
+      <a href="plants.html"> <button type="button" class="btn btn-success btn-block btn-lg">Plants</button></a>
+      <a href="detail transaction.html"> <button type="button" class="btn btn-primary btn-block btn-lg">Details Transaction </button></a>
+      
+  </div>
+
+
+  <div  class="col-sm-9" id="keterangan">
+    <div class="tabel">
+      <div class="panel-body">
+        <form class="form-horizontal">
+ 
+ 
+          <div class="form-group ">
+            <div class="gambar">
+              <img class="img-circle gambar" src="pics/sidebar/foto.png">
+            </div>
+          </div>  
+
+          <div class="form-group ">
+            <div class="keterangan">
+              <label class="control-label col-sm-offset-1 col-sm-3" for="namadepan" style="text-align: left">Name</label>
+                <div class="col-sm-6">
+                  <h4>  RIZAL </h4>
+                </div>
+            </div>
+          </div>  
+
+          <div class="form-group">
+            <label class="control-label  col-sm-offset-1 col-sm-3" for="tanggal" style="text-align: left">Email</label>
+              <div class="col-sm-6">
+                <p> rizal@gmail.com</p>
+              </div>
+          </div>
+  
+          <div class="form-group">
+            <label class="control-label  col-sm-offset-1 col-sm-3" for="tanggal" style="text-align: left">Date of Birth</label>
+              <div class="col-sm-6">
+                <p> 12-April-1996 </p>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-offset-1 col-sm-3" for="jeniskelamin" style="text-align: left">Sex</label>
+              <div class="col-sm-6"> 
+                <p> Male </p>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-offset-1 col-sm-3" for="alamat" style="text-align: left">Address</label>
+              <div class="col-sm-6"> 
+                <p>  Jalan Bersatu Jaya No 222 </p>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-offset-1 col-sm-3" for="kota" style="text-align: left">City</label>
+              <div class="col-sm-6"> 
+                <p>  Sleman </p>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-offset-1 col-sm-3" for="provinsi" style="text-align: left">Province</label>
+              <div class="col-sm-6"> 
+                <p> DI Yogyakarta </p>
+              </div>
+          </div>
+
+<br>
+        </form>
+          <!-- <div class="form-group" id="perbarui">  -->
+            <div class="col-sm-offset-7 col-sm-4">
+              <button class="btn btn-block btn-warning" data-toggle="modal" data-target="#perbarui">Update Profile</button> 
+            </div>
+          <!-- </div> -->
+
+
+      </div><br>
+    </div>
+  </div>
+
+</div>
+
+<br>
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+
+<script src="js/animslide.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(auto);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+	font-family: 'Lato';
+	font-smooth: always;
+  	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e8ffd0;
+	font-size: 16px;
+}
+
+/*Judul Detail Donasi*/
+.col-sm-offset-3 h2{
+	font-size: 35px;
+}
+
+/*3 Tombol Besar*/
+.col-sm-3 a{
+	white-space: normal;
+	text-decoration: none;
+	color: white;
+}
+.col-sm-3 button{
+	margin-bottom: 3%;	
+	border-radius: 0px;
+}
+
+
+/*tabel data*/
+.tabel {
+  background:white;
+  border-radius:6px;
+  box-shadow:5px 5px 0px rgba(0,0,0,.1);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 450px;
+  width:auto;
+
+}
+
+/*Bagian Data */
+.col-sm-9 {
+	border-left: solid grey;
+
+}
+.tombol-konfirmasi {
+	float: right;
+	/*margin-top: -20px;*/
+}
+
+.tombol-konfirmasi button{
+	white-space: normal;
+	border-radius: 0;
+
+}
+
+.col-sm-8{
+	margin-bottom: 2%; 
+}
+
+.upload {
+    position: relative;
+    overflow: hidden;
+    /*margin: 10px;*/
+}
+.upload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.fotoupload img{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	float: center;
+	text-align: center;
+	padding-bottom: 2px;
+}

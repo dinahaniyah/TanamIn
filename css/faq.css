@@ -1,0 +1,41 @@
+body {
+  font-family: 'Lato';
+  font-smooth: always;
+    overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e8ffd0;
+  font-size: 18px;
+}
+
+.judulFAQ {
+  font-size: 35px;
+}
+.tanya h3{
+	padding-top:1%; 
+}
+/*.tanya p{
+	font-size: 18px;
+}*/
+
+
+.panel-faq{
+    border: 0px solid grey;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2) ;
+    transition: box-shadow 0.5s;
+    padding: 2% 5% 4% 5%;
+}
+
+/*berita lainnya*/
+.tabel {
+  background:white;
+  box-shadow:5px 5px 0px rgba(0,0,0,.1);
+  width: 80%;
+  float: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}

@@ -1,0 +1,49 @@
+/*FOOTER*/
+.footer {
+  	background-color: #0e190f;
+  }
+
+/*KEMBALI KEATAS*/
+.keatas{
+	text-align: center;
+}
+
+/*Berlangganan*/
+.langganan {
+	color: white;
+}
+
+.langganan h3{
+	font-size: 22px;
+}
+
+.langganan p{
+	font-size: 16px;
+}
+
+ /*Langganan Email*/
+.input-group{
+	width: 90%;
+}
+/*Logo Sosial Media*/
+
+.media a{
+	padding-right: 1%;
+}
+.kami a{
+	margin-left: 30%;
+	text-decoration: none;
+	color: white;
+}
+
+#footer .col-sm-2 a {
+	text-decoration: none;
+	color: grey;
+	;
+}
+
+#footer a:hover{
+	color: white;
+}
+
+

@@ -1,0 +1,284 @@
+body {
+	font-family: 'Lato';
+	font-smooth: always;
+  	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e8ffd0;
+  font-size: 16px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 505%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*background hijau utama*/
+.bg-hijau {
+	background-color: #e8ffd0;
+}
+
+/*background abu-abu utama*/
+.bg-abuabu {
+	background-color: #f6f6f6;
+}
+
+/*---------------------------------------------------------------------*/
+
+.pemberitahuan {
+	border-radius: 0px;
+	border:solid 2px black;
+	background-color: #ADD8E6;
+}
+
+#beritahu .input-group{
+	width: 30%;
+}
+
+#mysubmit .btn-primary{
+  float: right;
+  text-align: right;
+
+}
+.logoDonasi h2{
+	font-size: 35px;
+	text-align: center;
+}
+
+.logoDonasi img{
+	height: 100px;
+	width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*.pilihDonasi{
+	padding-top: 15%;
+}*/
+
+.pilihDonasi h3{
+	text-align: left;
+	font-size: 25px;
+}
+
+.pilihDonasi img{
+	height: 50%;
+	width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hutan h4{
+  font-size: 26px;
+  
+}
+
+
+/*Beri Nama Pohon*/
+.namaPohon h3{
+	text-align: left;
+}
+.namaPohon h4{
+	text-align: left;
+}
+
+/*Harga Detail Donasi*/
+.hargaDonasi h3{
+	text-align: center;
+}
+
+.hargaDonasi input {
+	width: 100%;
+	text-align: center;
+	white-space: normal;
+}
+
+.donasitombol button, a{
+text-decoration: none;
+border-radius: 0px;
+white-space: normal;
+}
+
+#map_canvas {
+  height: 500px;
+  width: 100%;
+}
+
+.panel-body {
+	padding: 2% 5% 4% 5%;
+  box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+/*------------------------------*/
+#dalam .wrapper {
+  display: inline-block;
+  width: auto;
+  margin: 0px auto;
+  text-align: center;
+  
+}
+
+
+#dalam .percentWrap {
+  display: block;
+  height: 77px;
+  width: 69px;
+  border: 2px solid #C2BBAE;
+  border-right: none;
+  background-color: #DED7CC;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 24px;
+  transition: all 250ms ease-out;
+  float: left;
+}
+#dataisi {
+/*  background-color: yellow;*/
+  width: 50%;
+  padding: 1% 2% 1% 0%;
+  font-size: 18px;
+}
+
+#dalam .percentWrap:hover {
+  background-color: #C2BBAE;
+}
+
+#dalam  .percentWrap p {
+    display: inline-block;
+    text-align: center;
+  }
+
+#dalam .buttonWrap {
+  width: 40px;
+  height: 70px;
+  border: 2px solid #C2BBAE;
+  background-color: #DED7CC;
+  text-align: center;
+  font-size: 24px;
+  transition: all 250ms ease-out;
+  float: left;
+  padding-top: 7px;
+}
+
+#dalam button {
+  font-weight: bold;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+.angka{
+  width: 40px;
+}
+
+td{
+  width: 50%;
+}
+
+.hutan{
+  font-size: 50px;
+}
+
+a{
+  text-decoration:none;
+}
+
+#tanamanpilih .overlay {
+/*   position: absolute; */
+  top: 0;
+  /*left: 0;*/
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+#tanamanpilih .containernew:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+
+
+}
+
+#tanamanpilih img {
+  /*position: absolute;*/
+  height: 250px;
+  /*width: 500px;*/
+  /*height: 300px;*/
+/*   left: 0; */
+box-shadow:8px 5px 0px rgba(0,0,0,.1);
+}
+
+.containernew{
+  margin-bottom: 1%;
+  padding: 1%;
+    
+}
+
+#tanamanpilih .title {
+  position: absolute;
+  /*width: 500px;*/
+  background-color: rgba(0, 0, 0, .8);
+  padding: 1%;
+   left: 25px; 
+  text-align: center;
+  top: 160px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+#tanamanpilih .containernew:hover .title {
+  top: 80px;
+
+}
+
+#tanamanpilih .button {
+  position: absolute;
+  /*width: 500px;*/
+ left: 50px; 
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+#tanamanpilih .button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  font-style: bold;
+  /*background-color: black;*/
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+#tanamanpilih .containernew:hover .button {
+  opacity: 1;
+}

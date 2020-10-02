@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/kalkulasi.css" rel="stylesheet" type="text/css">
+  <link href="css/modalmasuk.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="indexs.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger" href="daftar.html">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+<!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+<!-- MODAL KE METODE PEMBAYARAN -->
+  <div class="modal fade" id="metode" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+<!--         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3 style="text-align: center;"><span class="glyphicon"></span> Ringkasan Pembelian</h3>
+          </div> -->
+
+          <div class="modal-body">
+          You will invest for:
+          <br><br>
+          <table class="table table-hover">
+          
+            <thead>
+              <tr>
+                <th>Plant Type</th>
+                <th>Total Plants</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Durian</td>
+                <td>1</td>
+                <td>Rp 1.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+          Location : Dukuh kenteng
+          <br>
+          <br>
+          <form>
+          <label for="inputdefault">Give your plant name</label> 
+           <input class="form-control" style="box-sizing:border-box;" placeholder="Name for plant or default" type="text">
+           </form>
+          </div>
+
+          <div class="modal-footer">
+          <div style="font-size: 13px" ><!-- <i>Lihat seluruh tanaman anda </i> -->
+             <a href="transactions.html" class="btn btn-primary btn-detail " style="border-radius: 0px;">
+                <span class="glyphicon "></span> INVEST NOW</a>             </div>
+          </div>
+      </div>
+
+    </div>
+  </div>   
+
+<div class="container-fluid">
+  <div class="judul-lokasi">Plants detail</div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-sm-12">
+      <div class="panel panel-lokasi">        
+        <div class="panel-body">
+          <h3>Location : Dukuh kentengo<br><br></h3>
+          <!-- <hr width="20%" align="left"><br> -->
+          <!-- <div class="col-sm-12"> -->
+            <div class="col-sm-5"> 
+            <img src="pics/durian.jpg" class="img-responsive" style="border:grey solid 1px; box-shadow:5px 5px 5px rgba(0,0,0,.1);">
+            </div>
+            <div class="col-sm-7">
+              <div class="col-sm-5">
+              Plant type
+              </div>
+              <div class="col-sm-7"> <a href="IPSengons.html"> <b>Durian</b></a>
+              </div>
+
+              <div class="col-sm-5">
+              Cost
+              </div>
+              <div class="col-sm-7"> <b>1.500.000,- / Plant</b>
+              </div>
+
+              <div class="col-sm-5">
+              Contract period
+              </div>
+              <div class="col-sm-7"> <b>15 years</b>
+              </div>
+
+              <div class="col-sm-5">
+              Return 
+              </div>
+              <div class="col-sm-7">  <b>12% - 15% per year</b>
+              </div>
+
+
+              <div class="col-sm-5">
+             Profit Sharing Period
+              </div>
+              <div class="col-sm-7">  <b>Per year after 5th year</b>
+              </div>
+
+
+              <div class="col-sm-5">
+              Partner
+              </div>
+              <div class="col-sm-7"> <b>Association XXX</b>
+              </div>
+
+              <div class="col-sm-5">
+              Planted 
+              </div>
+              <div class="col-sm-7"><b>325</b> plant by  <b>167</b> people<br><br>
+
+              </div>
+              <div class="col-sm-12"><hr>
+              </div>
+
+              <br><br>
+              <div class="col-sm-offset-1 col-sm-5">
+                  <input class="form-control" id="ex1" type="text" placeholder="Total Investment " required="">
+              </div>
+              <div class="col-sm-6">                
+               Left 20 plants <br><br>
+              </div>
+              <div class="col-sm-10 col-sm-offset-1">
+              <button class="btn btn-success btn-block" style="border-radius:0px;"" data-toggle="modal" data-target="#metode"><b>INVEST NOW</b></button><br><br>
+              </div>
+          </div>
+          
+          
+          <hr width="1px" align="center">
+          <hr width="100%" align="center">
+          <div class="statistik">Profit Sharing Simulation</div><br>
+          <div class="col-sm-4">
+            <form class="form-inline">
+              <div class="input-group">
+              <!-- <label for="focusedInput">Jumlah</label> -->
+              <input id="number" name="number" type="number" placeholder="Total Plant" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Calculate</button        >      </span>
+            </div>
+
+    </form>
+    </div><br>
+            <table class="table table-hover table-bordered"><br>
+
+            <thead>
+              <tr class="success">
+                <th>-th Year</th>
+                <th>Profit Sharing</th>
+                <th>ROI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>Rp 0</td>
+                <td>0% </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Rp 288.000</td>
+                <td>12% </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Rp 432.000</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rp 576.000</td>
+                <td>23%</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Rp 720.000</td>
+                <td>29%</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Rp 864.000</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td><b>Total</b></td>
+                <td><b>Rp 5.648.000</b></td>
+                <td><b>IRR : 15.34%</b></td>
+              </tr>
+   <!--              <tr>
+                <td colspan="2"> <input type="checkbox" name="centang" id="centang"> Total <div class="konfirmasi" style="text-align: right; color: blue"> <i>Menunggu Konfirmasi</i></div></td> 
+                <td style="background-color:grey">Rp 50.000</td>
+                </tr> -->
+            </tbody>
+          </table>
+           <br><hr width="100%" align="center">
+  <div class="statistik">Compare with other plants</div><br>
+  <div class="col-sm-6" style="border-right: 1px grey solid">1st Compared
+    <select>
+        <option>Choose the plant</option>
+        <option value="durian">Durian</option>
+        <option value="gandum">Wheat</option>
+        <option value="apel">Apple</option>
+    </select>
+    <div class="durian box">
+    <br>
+          <div class="col-sm-12">
+            <!-- <div class="col-sm-3">  -->
+              <img src="pics/durian.jpg" class="img-responsive" style="width: 80%;">
+            <!-- </div> -->
+            <div style="font-size: 15px">
+              Plant Type : <a href="IPSengon.html"> <i>Durian</i></a> <br>
+              Cost  : <i>1.500.000,- / plant</i><br>
+              Contract period : 15 years<br>
+              Return : 12%-15% per year<br>
+              Profit Sharing period: Per year, after 5th year<br>
+              Planted 325 plant by 167 people<br>
+              Partner : <i>Association XXX</i><br>
+
+              <strong>Left :</strong> <i>20 pohon </i><br>
+            </div>
+          </div>
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr class="success">
+                <th>-th Year</th>
+                <th>Profit Sharing</th>
+                <th>ROI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>Rp 0</td>
+                <td>0% </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Rp 288.000</td>
+                <td>12% </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Rp 432.000</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rp 576.000</td>
+                <td>23%</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Rp 720.000</td>
+                <td>29%</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Rp 864.000</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td><b>Total</b></td>
+                <td><b>Rp 5.648.000</b></td>
+                <td><b>IRR : 15.34%</b></td>
+              </tr>
+   <!--              <tr>
+                <td colspan="2"> <input type="checkbox" name="centang" id="centang"> Total <div class="konfirmasi" style="text-align: right; color: blue"> <i>Menunggu Konfirmasi</i></div></td> 
+                <td style="background-color:grey">Rp 50.000</td>
+                </tr> -->
+            </tbody>
+          </table>          
+    </div>
+    <div class="gandum box">Wheat</div>
+    <div class="apel box">Apple</div>
+  </div>
+
+  <div class="col-sm-6"> 2nd Compared
+     <select id="select-baru">
+        <option>Choose Plant</option>
+        <option value="mangga">Manggo</option>
+        <option value="jambu">Guava</option>
+        <option value="pepaya">Pinepple</option>
+    </select>
+    <div class="mangga box">
+          <div class="col-sm-12">
+            <div class="col-sm-4"> 
+              <img src="pics/jagung.jpg" class="img-responsive" style="">
+            </div>
+            <div class="col-sm-8" style="font-size: 15px">
+              Jenis Pohon : <a href="IPSengon.html"> <i>Durian</i></a> <br>
+              Harga  : <i>1.500.000,- / Pohon</i><br>
+              Periode Kontrak : 15 tahun<br>
+              Return yang didapat : 12%-15% per tahun<br>
+              Periode Bagi Hasil : Per Tahun Setelah tahun ke lima<br>
+              Telah tertanam 325 pohon disponsori 167 orang<br>
+              Kerjasama : <i>Badan Eksekutif Mahasiswa X</i><br>
+
+              <strong>Tersisa :</strong> <i>20 pohon </i><br>
+            </div>
+          </div>
+          <table class="table table-hover table-bordered">
+            <thead>
+                 <tr>
+                <td>0</td>
+                <td>Rp 0</td>
+                <td>0% </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Rp 288.000</td>
+                <td>12% </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Rp 432.000</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rp 576.000</td>
+                <td>23%</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Rp 720.000</td>
+                <td>29%</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Rp 864.000</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td><b>Total</b></td>
+                <td><b>Rp 5.648.000</b></td>
+                <td><b>IRR : 15.34%</b></td>
+              </tr>
+   <!--              <tr>
+                <td colspan="2"> <input type="checkbox" name="centang" id="centang"> Total <div class="konfirmasi" style="text-align: right; color: blue"> <i>Menunggu Konfirmasi</i></div></td> 
+                <td style="background-color:grey">Rp 50.000</td>
+                </tr> -->
+            </tbody>
+          </table>          
+    </div>
+    <div class="jambu box">Jambu</div>
+    <div class="pepaya box">Pepaya</div>
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+<script src="js/animslide.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+$("select").change(function(){
+    $(this).find("option:selected").each(function(){
+        if($(this).attr("value")=="durian"){
+            $(".box").not(".durian").hide();
+            $(".durian").show();
+        }else if($(this).attr("value")=="gandum"){
+            $(".box").not(".gandum").hide();
+            $(".gandum").show();
+        }else if($(this).attr("value")=="apel"){
+            $(".box").not(".apel").hide();
+            $(".apel").show();
+        }else{
+            $(".box").hide();
+        }
+    });
+}).change();
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+$("#select-baru").change(function(){
+    $(this).find("option:selected").each(function(){
+        if($(this).attr("value")=="mangga"){
+            $(".box").not(".mangga").hide();
+            $(".mangga").show();
+        }else if($(this).attr("value")=="jambu"){
+            $(".box").not(".jambu").hide();
+            $(".jambu").show();
+        }else if($(this).attr("value")=="pepaya"){
+            $(".box").not(".pepaya").hide();
+            $(".pepaya").show();
+        }else{
+            $(".box").hide();
+        }
+    });
+}).change();
+});
+</script>
+</body>
+</html>

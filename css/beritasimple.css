@@ -1,0 +1,221 @@
+/*bootstarb edite */
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-right {
+  border: 2px solid #fff;
+  padding-left: 8px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 40px
+}
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-right:hover {
+  color: black;
+  background: white;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  border: 2px solid #fff;
+  padding-left: 8px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 40px
+}
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left:hover {
+  color: black;
+  background: white;
+}
+
+@media (max-width:768px) {
+  .carousel-control .icon-prev,
+  .carousel-control .glyphicon-chevron-left {
+    padding-bottom: 10px;
+    padding-right: 8px;
+  }
+  .carousel-control .icon-prev,
+  .carousel-control .glyphicon-chevron-right {
+    padding-bottom: 10px;
+    padding-right: 8px;
+  }
+}
+
+
+/*end bootstrap   */
+
+.threed-section {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.span-featured2 {
+  background-color: #EF6767;
+  color: white;
+  bottom: 0px;
+  padding-bottom: 15px;
+  font-size: 23px;
+  padding-top: 5px;
+/*  text-transform: uppercase;*/
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Lato";
+}
+
+.col-md-4,
+.col-sm-3 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+/* start carousel style */
+
+.threed-section img {
+  height: 250px;
+  width: 500px;
+}
+
+.carousel-multiItem .carousel-control {
+  width: 4%;
+  background-image: none;
+}
+
+.carousel-multiItem .carousel-control.left {
+  margin-left: 15px;
+}
+
+.carousel-multiItem .carousel-control.right {
+  margin-right: 15px;
+}
+
+.carousel-multiItem .cloneditem-1,
+.carousel-multiItem .cloneditem-2,
+.carousel-multiItem .cloneditem-3 {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .carousel-multiItem .carousel-inner > .active.left,
+  .carousel-multiItem .carousel-inner > .prev {
+    left: -33.333%;
+  }
+  .carousel-multiItem .carousel-inner > .active.right,
+  .carousel-multiItem .carousel-inner > .next {
+    left: 33.333%;
+  }
+  .carousel-multiItem .carousel-inner > .left,
+  .carousel-multiItem .carousel-inner > .prev.right,
+  .carousel-multiItem .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-multiItem .carousel-inner .cloneditem-1,
+  .carousel-multiItem .carousel-inner .cloneditem-2 {
+    display: block;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .carousel-multiItem .carousel-inner > .active.left,
+  .carousel-multiItem .carousel-inner > .prev {
+    left: -16.666%;
+  }
+  .carousel-multiItem .carousel-inner > .active.right,
+  .carousel-multiItem .carousel-inner > .next {
+    left: 16.666%;
+  }
+  .carousel-multiItem .carousel-inner > .left,
+  .carousel-multiItem .carousel-inner > .prev.right,
+  .carousel-multiItem .carousel-inner > .active {
+    left: 0;
+  }
+  ..carousel-multiItem .carousel-inner .cloneditem-1,
+  .carousel-multiItem .carousel-inner .cloneditem-2,
+  .carousel-multiItem .carousel-inner .cloneditem-3 {
+    display: block;
+  }
+}
+
+
+/*start  content img  style */
+
+.item h3 > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 279.233px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
+  transition-delay transition: all .5s ease;
+}
+
+.item h3 > a:hover {
+  border-bottom: 2px solid #fff;
+    text-decoration: none;
+}
+
+.data-enter span {
+  margin-left: 15px;
+  margin-right: 15px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  min-height: 50px;
+  padding: 30px 0 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  margin: 0;
+  z-index: 23;
+  transition: all .5s ease;
+  font-family: "Lato";
+}
+
+.data-enter h3 {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  z-index: 21;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  max-width: 90%;
+  margin-left: 15px;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  font-family: "Lato";
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.hover:hover span {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+   transform: translate(0px, -5px);
+   text-decoration: none;
+}
+
+.hover:hover h3 {
+  transform: translate(0px, -10px);
+     text-decoration: none;
+}
+
+.data-enter .date {
+  float: left;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 23.8px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  cursor: pointer;
+}

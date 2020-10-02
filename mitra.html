@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baby Tree</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/mitra.css" rel="stylesheet" type="text/css">
+  <link href="css/modalmasuk.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <style class="cp-pen-styles"></style>
+</head>
+
+<body id="page" data-spy="scroll">
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#login"> <button class="btn btnaja btn-success" data-toggle="modal" data-target="  #login">Masuk</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="daftar.html"><button class="btn btnaja btn-danger" href="daftar.html">Daftar</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+<!-- MODAL MASUK-->
+ <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4><span class="glyphicon glyphicon-user"></span> Masuk</h4>
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+              </div>
+             </form>
+                <a href="donasi.html" style="text-decoration:none; color:black"><button class="btn btn-block">Masuk
+                  <span class="glyphicon"></span></button> 
+                </a>
+
+          </div>
+
+          <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary btn-default ">
+                <i class="fa fa-facebook" aria-hidden="true"></i>Masuk dengan Facebook
+              </a>
+
+              <a href="#" class="btn btn-danger btn-default">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>Masuk dengan Google+
+              </a>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+
+<div class="container-fluid">
+  <div class="judulMitra">Mitra Donasi</div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-sm-12">
+      <div class="panel panel-mitra">        
+        <div class="panel-body">
+          <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr class="judul-tabel">
+                <th>No</th>
+                <th>Mitra / Pengelola</th>
+                <th>Lokasi</th>
+                <th>Jenis Pohon</th>
+                <th>Produk Olahan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Badan Eksekutif Mahasiswa X</td>
+                <td><a href="lokasi.html"> Dukuh kenteng, sentolo, Kulon Progo</a></td>
+                <td><a href="IPSengon.html"> Sengon </a></td>
+                <td>Kayu-kayuan</td>
+              </tr>
+
+              <tr>
+                <td>2.</td>
+                <td>Lembaga Penyelamat Lingukungan</td>
+                <td><a href="lokasi.html"> Martapura, Kalimantan Selatan</a></td>
+                <td><a href="IPSengon.html"> Damar </a></td>
+                <td>Getah dan Resin</td>
+              </tr>
+
+              <tr>
+                <td>3.</td>
+                <td>WWFF</td>
+                <td><a href="lokasi.html"> Kerinci, Sumatera Barat</a></td>
+                <td><a href="IPSengon.html"> Kulit manis / Kayu manis</a></td>
+                <td>Rempah-rempah</td>
+              </tr>
+
+              <tr>
+                <td>4.</td>
+                <td>FFWW</td>
+                <td><a href="lokasi.html"> Aceh Selatan</a></td>
+                <td><a href="IPSengon.html"> Pohon Pala </a></td>
+                <td>Buah-buahan</td>
+              </tr>
+              
+              <tr>
+                <td>5.</td>
+                <td>FEO</td>
+                <td><a href="lokasi.html"> Sumba, Nusa Tenggara Timur</a></td>
+                <td><a href="IPSengon.html"> Cendana </a></td>
+                <td>Obat-obatan</td>
+              </tr>                  
+            </tbody>  
+          </table>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          <p>Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Bantuan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Temukan Kami</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@littletree.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="D:/LittleTree/pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+<script src="js/animslide.js"></script>
+</body>
+</html>

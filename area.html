@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/donasi.css" rel="stylesheet" type="text/css">
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/prefixfree.min.js"></script> -->
+  <style class="cp-pen-styles"></style>
+</head>
+
+<body id="page" data-spy="scroll">
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse" id="navbar">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="indexs.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+<!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+<!-- MODAL -->
+ <div class="modal fade" id="ganti" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4>Change your plant's name</h4>
+          </div>
+
+          <div class="modal-body">
+            <table id="tbl_id" style="text-align:left; width="100%"  valign:"top" class="tabelbaru">
+            </table>    
+          </div>
+
+          <div class="modal-footer">
+          <form></form>
+          <button class="btn btn-primary" class="close" data-dismiss="modal">Simpan Nama</button>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+</header>
+
+
+<div class="container-fluid">
+  <div class="logoDonasi">
+    <h2>Location for Plants</h2>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="panel panel-body">
+    <div class="pilihDonasi">
+      <h3>Choose your location</h3>
+        <!-- <hr align="left" width="150px"> -->
+        
+    </div>
+    <div id="map_canvas"></div>
+
+    <div id="tanamanpilih" hidden>
+      <hr>
+      <h3>Choose your plants </h3>
+      <div class="col-sm-3 containernew">
+            <img src="pics/mangga.jpg" class="img-responsive" alt="" />
+            <p class="title">Manggo<br>Rp 1.500.000<br><b>Return : 10%-15% per year </b></p>
+            <div class="overlay"></div>
+            <div class="button"><a href="calculation.html"> Detail </a></div>
+      </div>
+      <div class="col-sm-3 containernew">
+            <img src="pics/apel.jpg" class="img-responsive" alt="" />
+            <p class="title">Apple<br>Rp 2.450.000<br><b>Return : 10%-15% per year </b></p>
+            <div class="overlay"></div>
+            <div class="button"><a href="calculation.html"> Detail </a></div>
+      </div>
+      <div class="col-sm-3 containernew">
+            <img src="pics/durian.jpg" class="img-responsive" alt="" />
+            <p class="title">Durian<br>Rp 2.900.000<br><b>Return : 10%-15% per year </b></p>
+            <div class="overlay"></div>
+            <div class="button"><a href="calculation.html"> Detail </a></div>
+      </div>            
+      <div class="col-sm-3 containernew">
+            <img src="pics/ubi.jpg" class="img-responsive" alt="" />
+            <p class="title">Cassava<br>Rp 345.000<br><b>Return : 10%-15% per year </b></p>
+            <div class="overlay"></div>
+            <div class="button"><a href="calculation.html"> Detail </a></div>
+      </div>
+
+            <div class="col-sm-3 containernew">
+            <img src="pics/gandum.jpg" class="img-responsive" alt="" />
+            <p class="title">Wheat<br>Rp 1.003.000<br><b>Return : 10%-15% pertahun </b></p>
+            <div class="overlay"></div>
+            <div class="button"><a href="calculation.html"> Detail </a></div>
+      </div>
+
+            <div class="col-sm-3 containernew">
+            <img src="pics/jagung.jpg" class="img-responsive" alt="" />
+            <p class="title">Corn<br>Rp 1.500.000<br><b>Return : 10%-15% pertahun </b></p>
+            <div class="overlay"></div>
+            <div class="button"><a href="calculation.html"> Detail </a></div>
+      </div>
+
+    </div>
+
+    <div class="namaPohon">
+      <br>
+      <!-- <h3>Give Field Name</h3> -->
+<!--       <div class="tooltip">Hover over me
+        <span class="tooltiptext">It will appear after you choose location </span>
+      </div> -->
+      
+      <h4 id="hutan" hidden></h4>
+        <!-- <div class="col-sm-12"> -->
+          <div id="dataisi"> </div>
+            <div id="tabelisi"> </div>
+        <!-- </div> -->
+      <h4 id="sumatera"></h4>
+
+<!--       <h4> Pohon di Hutan Irian </h4> -->
+<!--         <form class="form-horizontal" id="pohon">
+        <div class="wrapper" id="dalam" hidden>
+          <div class="percentWrap" id="dalam">
+            <p id="number">Jumlah Donasi : <input type="text" name="angka" class="angka" id="angka" ondragenter="angka()"> Pohon
+            </p>
+            <input type="button" class="btn btn-primary" id="dalam" onclick="myFunction()" value="Lanjutkan">
+          </div>
+          </div>
+          </form> -->
+    <form align="left" method="GET">
+      <div id="dalam" hidden>
+        <h4>Interest for the location and the plant? </h4><br>
+        <div class="col-sm-offset-3">
+        <button class="btn btn-primary" style="border-radius: 0px;" id="mysubmit" onClick="scrollWin(); showit(); return false;">Find more and choose it</button>
+        </div>
+        </p>
+    </form>
+      </div>
+
+
+          
+     
+
+
+<!--           <div class="form-group">
+            
+            <div class="col-sm-8" > 
+              <div class="col-sm-3 brkelamin"></div>
+            
+              <div class="col-sm-5 brtext"></div>
+            </div>
+          
+          </div>
+        </form>
+    </div>
+ -->
+
+<!--     <div class="hargaDonasi">
+    <br>
+        <h3><b>Total Transaction</b></h3> -->
+        <!-- <hr align="left" width="120px"> -->
+ <!--        <div class="col-sm-offset-3 col-sm-6">
+        <input type="text" id="disabledInput" class="form-control input-lg total" placeholder="" disabled> -->
+        <!-- <input class="input-lg total" type="text" name="donasi" id="disabledInput" placeholder="" disabled> -->
+<!--     </div>
+    </div> -->
+
+
+
+<!--     <div class="col-sm-offset-4 col-sm-4">
+      <div class="donasitombol"> <br>
+        <a href="pembayaran.html"><button class="btn btn-primary btn-block btn-lg">Next Payment</button> </a>
+      
+      </div>
+    </div> -->
+  </div>
+</div>
+</div>
+<br>
+
+
+<!-- -------------------------------
+<!-- <div class="wrapper" id="dalam" hidden>
+  <div class="percentWrap" id="dalam">
+        <p id="number">0<input type="text" name="angka" id="angka" ondragenter="angka()">
+    </p>
+  </div>
+  <div class="buttonWrap" id="dalam">
+    <button onclick="subtract()">-</button>
+    <button id="add" onclick="add()">+</button>
+  </div>
+</div> -->
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+<script src="js/animslide.js"></script>
+<!-- <script src="js/peta.js"></script> -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBUCrXLMAytiRELwylb5bRQ3pztdUYlHOw&sensor=false"></script>
+
+<script type="text/javascript"> 
+function initialize() {
+
+  var lokasi = [
+    ["t", -7.826013, 110.164516],["t", -2.727580, 116.097019],["t",-2.242462, 120.027112],["t",-0.109012, 110.868983],["t",0.614509, 100.068304],["t",-3.295691, 137.252004]
+  ];
+  
+
+  var iterapung = 'pics/peta/pin-4.png';
+
+  var indonesia = new google.maps.LatLng( -4.549208, 120.39698670000007 );
+  
+
+  var myOptions = {
+    center: indonesia,
+    panControl: false,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: false,
+    overviewMapControl: false,
+    zoom: 5,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  
+
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  var latbounds = new google.maps.LatLngBounds();
+
+  var tambahin = document.getElementById('dalam').innerHTML;
+
+  var marker, i;
+  var gambar;
+  var tulisan;
+
+  infowindow = new google.maps.InfoWindow({
+    content: "tunggu..."
+  });
+
+
+  for( i = 0; i < lokasi.length; i++ ) {
+
+    var nnm = new google.maps.LatLng( lokasi[i][1], lokasi[i][2] );
+    if( lokasi[i][0] == 't' ) {
+      gambar = iterapung;
+      tulisan="Location : <strong> <a href='lokasi.html' target='_blank'> Kulon Progo</a><br> </strong> <br> The appropriate plants at this area :<br> <strong>Wheat<br>Durian<br>Apple</strong> <br><br> Investment Period : <strong> 1-5 years</strong>(depending by plants)  <br> Planted: <strong> 579 </strong> by <strong> 68 people</strong> in this location ";
+    }
+    else if(lokasi[i][0]=='s'){
+      gambar=iterapung;
+      tulisan="<strong>Hutan Sumatera</strong> <br> JUMLAH POHON :";
+
+    } 
+
+    marker = new google.maps.Marker({
+      position: nnm,
+      map: map,
+      icon: gambar,
+      html: tulisan + "<br><br>" + tambahin
+    });
+
+    latbounds.extend( nnm );
+
+    google.maps.event.addListener(marker, 'click', function () {
+
+      infowindow.setContent(this.html);
+      infowindow.open(map, this);
+      document.getElementById("hutan").innerHTML ="<b>Daerah Kulon Progo</b>";
+
+      var geocoder;
+      geocoder = new google.maps.Geocoder();
+      var latlng = new google.maps.LatLng(2.29, 109.11);
+
+//       geocoder.geocode(
+//         {'latLng': latlng}, 
+//         function(results, status) {
+//           if (status == google.maps.GeocoderStatus.OK) {
+//             if (results[0]) {
+//               var add= results[0].formatted_address ;
+//               var  value=add.split(",");
+
+//               count=value.length;
+//               country=value[count-1];
+//               state=value[count-2];
+//               city=value[count-3];
+//               $("#hutan").append("city name is: " + country + city);
+//               }
+//             else  {
+//               $("#hutan").append("address not found");
+//             }
+//         }
+//          else {
+//             $("#hutan").append("Geocoder failed due to: " + status);
+//         }
+//     }
+// );
+    });
+  }
+  
+  map.setCenter( latbounds.getCenter() );
+  map.fitBounds( latbounds );
+  
+  if( map.getZoom() > 7 ) {
+    map.setZoom( 7 );
+  }
+}
+
+window.onload = initialize();
+</script>  
+<script type="text/javascript">
+      var total = 0;
+      window.onload = $(".total").attr("placeholder", "Donasi "+total+" pohon Rp. "+total);
+      function addMoreRows() {
+
+        // var number="1";
+        var rowsAdded = document.getElementById('user_id').value;
+        alert("Anda akan mendonasi sebanyak " + rowsAdded + " pohon");
+
+          document.getElementById('dataisi').innerHTML="Jumlah Yang Didonasikan " + rowsAdded+ "  Pohon";
+
+          document.getElementById('tabelisi').innerHTML="<input style='width:80%; padding:1% 2% 1% 2%; margin=2%; box-sizing:border-box;' type='text' placeholder='Tulis Nama Pohon'><br> <span class='help-block'><i>(Nama ini digunakan untuk semua pohon)</i></span><br>Jika ingin memberi nama satu per satu silahkan tekan tombol berikut  <button class='btn btn-success' data-toggle='modal' data-target='#ganti'>Ganti Nama Pohon</button></a><br><br>" ;
+
+        // var dataisi=document.getElementById('use')
+
+        for(var x=0; x<rowsAdded; x++) {
+          $("#tbl_id").append("<div class='col-sm-5 brtext'>"+(x+1)+"<input type='text' class='form-control' id='jenishutan' placeholder='Nama Pohon'></div>");
+          //var newRow = document.getElementById('tbl_id').insertRow();
+
+          //var newCell = newRow.insertCell();
+          //newCell.append("<div class='col-sm-5 brtext'>"+x+"<input type='text' class='form-control' id='jenishutan' placeholder='Nama Pohon'></div>");
+
+          // newCell = newRow.insertCell();
+          // newCell.innerHTML="<tr><td><input type='text' name='score'></td></tr>";
+
+          // newCell = newRow.insertCell();
+          // newCell.innerHTML="<tr><td><input type='text' name='points'></td></tr>";
+
+          // newCell = newRow.insertCell();
+          // newCell.innerHTML="<tr><td><input type='text' name='total'></td></tr>";
+
+        }
+
+        var total = (rowsAdded * 150000);
+        $(".total").attr("placeholder", "Donasi "+rowsAdded+" pohon Rp. "+total);
+
+      }
+    // var total = ((rowsAdded * 150000)/1000).toFixed(3);
+
+function scrollWin() {
+    window.scrollTo(0, 750);
+}
+
+
+function showit(){
+  document.getElementById('tanamanpilih').style.display = "block";
+}
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  // var number = 0;
+  // var total = 0;
+  window.onload = $(".total").attr("placeholder", "Donasi "+rowsAdded+" pohon Rp. "+total);
+
+// function checkNum() {
+//   if (number == -1) {
+//     number++;
+//   }
+//   else {}
+// }
+
+document.getElementById("number").innerHTML=(number);
+
+function angka() {
+  // number++;
+  // checkNum();
+  document.getElementById("number").innerHTML=(number); 
+  $(".brkelamin").append("<select id='jeniskelamin' class='form-control'><option>Pohon Mangga</option><option>Pohon Rambutan</option></select></div>");
+  $(".brtext").append("<input type='text' class='form-control' id='jenishutan' value='Kulon Progo  .number'>");
+  var total = ((number * 50000)/1000).toFixed(3);
+  $(".total").attr("placeholder", "Donasi "+number+" pohon Rp. "+total);
+}
+
+// function subtract() {
+//   number--;
+//   checkNum()
+//   document.getElementById("number").innerHTML=(number); 
+// }
+
+
+
+
+function row(){
+  for (i=0; i<number; i++){
+    $("form-group").append(" <div class='col-sm-5 brtext'><input type='text' class='form-control' id='jenishutan' placeholder='Nama Pohon'></div>");
+
+  }
+}
+</script>
+
+</body>
+</html>

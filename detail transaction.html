@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <link href="css/navbargaris.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/detaildonasi.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/modalmasuk.css" rel="stylesheet" type="text/css"> -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <style class="cp-pen-styles"></style>
+</head>
+
+<body id="page" data-spy="scroll">
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="indexs.html"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+<!--         </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+<!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+<!-- MODAL KONFIRMASI -->
+<div class="modal fade" id="konfirmasi" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4>Confirmation</h4>
+          </div>
+
+          <div class="modal-body">
+          <!-- <div class="col-sm-7"> -->
+            <form role="form">
+            <div class="form-group">
+              <div class="col-sm-12"><h4><b>Investasi</b></h4></div>
+                <div class="col-sm-4">Total Investasi</div>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="nama" placeholder="Rp. 1.500.000" readonly>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12"><hr></div>
+              </div>
+
+              <div class="form-group">
+              <div class="col-sm-12"><h4><b>Rekening Investor</b></h4></div>
+                <div class="col-sm-4">Bank Name</div>
+                <div class="col-sm-8">
+                <select class="form-control" id="bank" name="bank">
+                  <option value="none">--  Pilih Bank Pengirim --</option>
+                  <option value="laki-laki">Bank AA</option>
+                  <option value="perempuan">Bank BB</option>
+                  <option value="perempuan">Bank CC</option>
+                  <option value="perempuan">Bank DD</option>
+                </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-4">Pemilik Rekening</div>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="nama" placeholder="Nama Pemilik Rekening">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-4">No Rekening</div>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="nama" placeholder="No Rekening Pengirim">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12"><hr></div>
+              </div>
+
+              <div class="form-group">
+              <div class="col-sm-12"><h4><b>Rekening Tujuan</b></h4></div>
+                <div class="col-sm-4">Rekening Bank Tujuan</div>
+                <div class="col-sm-8">
+                <select class="form-control" id="bank" name="bank">
+                  <option value="none">--  Pilih Bank Tujuan --</option>
+                  <option value="laki-laki">Bank AA</option>
+                  <option value="perempuan">Bank BB</option>
+                  <option value="perempuan">Bank CC</option>
+                  <option value="perempuan">Bank DD</option>
+                </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-4">Jumlah yang dibayarkan</div>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="nama" placeholder="Rp">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <!-- <div class="col-sm-4">Unggah Bukti</div>
+                <div class="col-sm-8"> -->
+                  <!-- <input type="file" class="form-control" id="nama" placeholder="Perbarui Nama"> -->
+
+                <div class="upload btn btn-primary btn-block"><span>Unggah Bukti Pembayaran</span><input type="file" class="upload" onchange="readURL(this)">
+                </div>
+                <br>
+                <div class="fotoupload"><img id="blah"></div>
+              <!-- </div> -->
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12"><hr></div>
+              </div>
+
+             
+                <a href="detail transaction.html" style="text-decoration:none; color:black;"><button class="btn btn-info btn-block" style="border-radius:0px;">Confirmation</button> 
+                </a>
+              </form>
+          </div>
+
+<!--           <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-danger btn-default">Simpan</a>
+          </div>
+          </div> -->
+      </div>
+
+    </div>
+  </div>  
+
+
+<div class="container-fluid">
+  <div class="col-sm-offset-3">
+    <h2> Details Transaction</h2>
+  </div>
+
+  <div class="col-sm-3">
+      <a href="profile.html"> <button type="button" class="btn btn-danger btn-block btn-lg" > Profile</button></a>
+      <a href="plants.html"> <button type="button" class="btn btn-success btn-block btn-lg">Plants</button></a>
+      <a href="detail transaction.html"> <button type="button" class="btn btn-primary btn-block btn-lg">Details Transaction </button></a>
+      
+  </div>
+<div class="col-sm-4 tombol-konfirmasi"><button class="btn btn-info btn-block" data-toggle="modal" data-target="#konfirmasi">Confirmation</button></div><br><br>
+
+  <div class="col-sm-9">
+
+    <div class="tabel">
+
+
+      <div class="panel-body">
+      <input type="checkbox" name="centang-all" id="centang-all"> <i>Mark all the transaction that not yet approved<br></i><br>
+        <h4>Date <strong> 24 September 2017</strong>  </h4>
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr class="success">
+                <th>Plant Type</th>
+                <th>Total Plants</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Durian</td>
+                <td>1</td>
+                <td>Rp 1.500.000</td>
+              </tr>
+                <tr>
+                <td colspan="2"> <input type="checkbox" name="centang" id="centang"> Total <div class="konfirmasi" style="text-align: right; color: blue"> <i>Waiting for confirmation</i></div></td> 
+                <td style="background-color:grey">Rp 1.500.000</td>
+                </tr>
+            </tbody>
+          </table>
+
+  <br>
+        <h4>Date  <strong>05 Maret 2017</strong> </h4>
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr class="success">
+                <th>Plant type</th>
+                <th>Total Plant</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apple</td>
+                <td>1</td>
+                <td>Rp 2.000.000</td>
+              </tr>
+              
+              <tr>
+                <td>Manggo</td>
+                <td>1</td>
+                <td>Rp 1.500.000</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Total</td>
+                <td style="background-color:grey">Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+<script src="js/animslide.js"></script>
+<script type="text/javascript">
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(auto);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+
+<script type="text/javascript">
+  $('#centang-all').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;                        
+        });
+    }
+
+  else {
+    $(':checkbox').each(function() {
+          this.checked = false;
+      });
+  }
+});  
+</script>
+
+</body>
+</html>

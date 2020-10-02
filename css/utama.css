@@ -1,0 +1,351 @@
+
+body {
+	font-family: 'Lato';
+	font-smooth: always;
+  	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 18px;
+}
+p {
+	font-size: 18px;
+}
+.sub-nama{
+	text-align: center;
+	font-size: 20px;
+}
+
+.sandi{
+	font-size: 14px;
+}
+/*background hijau utama*/
+.bg-hijau {
+	background-color: #e8ffd0;
+}
+
+/*background abu-abu utama*/
+.bg-abuabu {
+	background-color: #f6f6f6;
+}
+
+/*Slide Animasi*/
+.slideanim {visibility:hidden;}
+.slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 4s;
+      -webkit-animation-duration: 1.5s;
+      visibility: visible;
+  }
+
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+ }
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 2000px) {
+
+/*JUDUL LITTLETREE*/
+.judulLT {
+	font-size: 80px;
+	text-align: center;
+	color: black;
+	font-family: 'Lato';	
+}
+
+/*DEFINISI JUDUL LITTLETREE*/
+.definisiJudulLT{
+	font-size: 30px;
+	text-align: center;
+	color: black;
+/*	font-family: 'Lato';*/
+	/*font-weight: 100px;*/
+	/*harusnya strong*/
+}
+
+/*YANG DIDAPATKAN*/
+.judulDiDapatkan {
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+
+/*4 POIN DIDAPATKAN*/
+#bulat .col-sm-4 h3 {
+	font-size: 30px;
+	text-align: center;
+}
+
+#bulat .col-sm-4 p {
+	font-size: 18px;
+	text-align: center;
+}
+
+.cool  {
+/*width: 200px;*/
+height: 180px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/*YANG DILAKUKAN*/
+.judulDilakukan {
+	font-size: 40px;
+	text-align: center;
+}
+
+.panah {
+	width: 85%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+.col-sm-5th{
+	float: left;
+	width: 20%;
+	position: relative;
+}
+
+.col-xs-5th, .col-sm-5th, .col-lg-5th{
+/*	float: left;
+	width: 20%;*/
+	position: relative;
+}
+#bulat .col-sm-2 h3{
+	font-size: 28px;
+	text-align: center;
+}
+
+#bulat .col-sm-2 img{
+	height: 160px;
+	width: 160px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.testimoni{
+	text-align: center;
+	font-size: 40px;
+
+}
+.judul-komentar{
+	text-align: center;
+	font-size: 22px;
+}
+.sub-komentar{
+	text-align: center;
+	/*text-decoration: italic;*/
+	font-size: 18px;
+}
+.komentar{
+	text-align: left;
+	background-color: white;
+	height: 450px;
+	padding: 10% 5% 10% 5%;
+	margin-bottom: 5%;
+	box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+.komentar:hover{
+	opacity: 0.9;
+ box-shadow: 0px 0px 1px rgba(0,0,0,.1);
+}
+
+#komen .komentar img{
+	width: 40%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+/*Logo Sosial Media*/
+.sosial {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.sosial a{
+	margin-right: 1%;
+}
+/*.komentar p{
+	text-align: justify;
+}
+*/
+
+/*#da.col-sm-6{
+	padding-top: 3%;
+}
+.col-sm-6 h3{
+	font-size: 30px;
+	text-align: center;
+}
+
+.col-sm-6 img{
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}*/
+/*BERITA*/
+.berita {
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Data Statistik*/
+.statistik{
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Gambar Statistik*/
+img.gambarStatistik {
+	width: 45%;
+	height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Donasi*/
+.donasi{
+	background-image:url(D:/LittleTree/pics/bg.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+/*Donasi Sekarang*/
+.col-sm-offset-7 h2{
+	font-size: 30px;
+	padding-top: 100px;
+	color: black;
+}
+
+.tomboldonasi button{
+	white-space: normal;
+	border-radius: 0px;
+}
+
+
+/*Galeri*/
+.galeri{
+	font-size: 40px;
+	text-align: center;
+}
+
+.gambar-galeri{
+	text-align: center;
+	float: center;
+	/*border: solid;
+	/*padding: 2% 1% 1% 1%;*/
+}
+.all-pics{
+	width: 350px;
+	height: 200px;
+	margin-bottom: 1%;
+	margin-right: 1%;
+}
+
+.all-pics:hover
+{
+    box-shadow: 0px 0px 50px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+/*Ayo Bagikan*/
+.bagikan {
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/*.direktorat{
+	margin-left: px;
+}
+*/
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+/*JUDUL LITTLETREE*/
+.judulLT {
+	font-size: 80px;
+	text-align: center;
+	color: black;	
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+/*JUDUL LITTLETREE*/
+.judulLT {
+	font-size: 80px;
+	text-align: center;
+	color: black;	
+}
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+/*JUDUL LITTLETREE*/
+.judulLT {
+	font-size: 80px;
+	text-align: center;
+	color: black;	
+}
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+/*JUDUL LITTLETREE*/
+.judulLT {
+	font-size: 80px;
+	text-align: center;
+	color: black;	
+}
+
+}
+

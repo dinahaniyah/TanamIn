@@ -1,0 +1,381 @@
+/*NAVBAR*/
+.navbar-inverse{
+  background-color: #E8FFD0;
+  border-color: transparent;
+}
+.navbar-header {
+  background-color: #E8FFD0;
+  border-color: transparent;
+}
+.logo{
+  padding: 9px;
+  height: 100%;
+  width: 250px;
+}
+.navbar-brand{
+  padding: 3%;
+  width: 250px;
+  height: 100%;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url("D:/LittleTree/pics/mvnavbar/intro.png");
+}
+, a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; box-sizing: border-box;
+    /*overflow-y: hidden;*/
+  
+}
+label, #active, img { 
+  -moz-user-select:none
+  ;-webkit-user-select:none; 
+}
+
+
+
+
+/* NEW EXPERIMENT */
+/* Slider Setup */
+
+input {
+  display: none;
+}
+
+#slide1:checked ~ #slides .inner { margin-left:0; }
+#slide2:checked ~ #slides .inner { margin-left:-100%; }
+#slide3:checked ~ #slides .inner { margin-left:-200%; }
+#slide4:checked ~ #slides .inner { margin-left:-300%; }
+#slide5:checked ~ #slides .inner { margin-left:-400%; }
+
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+  height: 615px;
+}
+
+#slides .inner {
+  width: 500%
+}
+
+#slides article {
+  width: 20%;
+  float: left;
+}
+
+/* Slider Styling */
+
+/* Control Setup */
+
+#controls {
+  margin: -30% auto;
+  width: 100%;
+  height: 50px;
+}
+
+#controls label { 
+
+}
+
+
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4), 
+#slide4:checked ~ #controls label:nth-child(5) {
+  background: url("D:/LittleTree/pics/mvnavbar/lanjut-5.png")no-repeat;
+  float: right;
+  cursor: pointer;
+  margin: 0 -18% 0 0;
+  display: block;
+  width: 500px;
+  height: 100px;
+  /*opacity: 0.3;*/
+  &:hover { opacity: 0.8; }
+}
+
+#slide1:checked ~ #controls label:nth-child(2){
+  /*border: solid;*/
+  width: 500px;
+  height: 80px;
+  cursor: pointer;
+  margin-top: 85px;
+  margin-left: 31%;
+  position: fixed;
+
+  /*background: url("D:/LittleTree/pics/baca.PNG") cover no-repeat;*/
+
+  /*float: center;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*display: block;*/
+}
+
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3),
+#slide5:checked ~ #controls label:nth-child(4) {
+  background: url("D:/LittleTree/pics/mvnavbar/kembali-5.png")no-repeat;
+  float: left;
+  cursor: pointer;
+  margin: 0 0 0 -8%;
+  display: block;
+  width:500px;
+  height:100px;
+  /*opacity: 0.3;*/
+  &:hover { opacity: 0.8; }
+}
+
+/* Info Box */
+
+.info {
+  /*line-height: 0px;*/
+    position: absolute;
+    float: center;
+/*  padding: 30px 30px 30px 30px;*/
+}
+
+.tulisanawal h1{
+  /*padding: 0% 30% 0% 5%;*/
+  /*float: left;*/
+  font-size: 35px;
+  color: #008080;
+  text-align: center;
+  /*white-space: normal;*/
+  /*position: relative;*/
+  z-index: 100;
+}
+
+.container{
+  padding: 3% 0% 3% 15%;
+}
+
+
+
+.informasi{
+  text-align: center;
+  margin-top: 60px;
+}
+.col-sm-4 a,button{
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2%;
+  margin-bottom: 3%; 
+  border-radius: 0px;
+  z-index: 10;
+  white-space: normal;
+
+}
+
+.btn-warning{
+  border-radius: 0;
+}
+.btn-donasi{
+  padding: 10px 20px;
+  background-color: transparent;
+  border-color: blue;
+  color: black;
+  border-radius: 0px;
+  /*transition: .2s;*/
+}
+
+.baca a {
+  text-align: center;
+  white-space: none;
+  text-decoration: none;
+}
+.plane h2{
+  padding-top: 2%;
+  padding-left: 10%;
+  text-align: center;
+  float: left;
+}
+
+.gambar-plane{
+  width: 30%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.gambar-oksigen{
+  width: 30%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+.oksigen h2{
+  text-align: center;
+  color: white;
+  float: left;
+  padding-top: 3%;
+  padding-left: 7%;
+
+}
+.gambar-peta {
+  width: 33%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.peta h2{
+  text-align: center;
+  color: white;
+  float: left;
+  padding-top: 2%;
+  padding-left: 8%;
+
+}
+
+.gambar-duit{
+  width: 60%;
+  height: auto;
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+.duit h2{
+  text-align: center;
+  color: white;
+  float: left;
+  padding-top: 10%;
+  padding-left: 20%;
+}
+
+.tulisan button{
+  z-index: 100;
+  border-radius: 0;
+  margin-top: -40px;
+  float: right;
+}
+
+
+
+
+/* Animation */
+
+#slides .inner {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+  -moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+     -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+        transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+
+  -webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+  -moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}
+
+#slider {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#controls label{
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+#slide1:checked ~ #slides article:nth-child(1) .info,
+#slide2:checked ~ #slides article:nth-child(2) .info,
+#slide3:checked ~ #slides article:nth-child(3) .info,
+#slide4:checked ~ #slides article:nth-child(4) .info,
+#slide5:checked ~ #slides article:nth-child(5) .info {
+  opacity: 1;
+  -webkit-transition: all 1s ease-out 0.6s;
+  -moz-transition: all 1s ease-out 0.6s;
+  -o-transition: all 1s ease-out 0.6s;
+  transition: all 1s ease-out 0.6s;
+}
+
+.info, #controls, #slides, #active, #active label, .info h3 {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* Responsive Styling */
+
+/*
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+
+  #slider #controls {
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  #slider #controls label {
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  #slider #controls {
+    margin: -28% 0 0 0;
+    width: 100%;
+    height: 100px;
+  }
+
+  #slider #slides {
+    /*padding: 1% 0;*/
+/*    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+  }*/
+
+  #slider #controls label {
+    -moz-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+}
+
+
+/*@media only screen and (min-width: 850px) {*/
+
+
+.btn-primary, .btn-warning {
+  border-radius: 0px;
+}
+
+.btn-donasi :hover {
+  background-color: #f6f6f6;
+  /*opacity: 1.0;*/
+    /*filter: alpha(opacity=100);*/
+
+}

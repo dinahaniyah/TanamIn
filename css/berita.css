@@ -1,0 +1,66 @@
+body {
+  font-family: 'Lato';
+  font-smooth: always;
+    overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e8ffd0;
+  font-size: 17px;
+}
+
+.judulBerita {
+  font-size: 35px;
+}
+
+.panel-berita{
+    border: 0px solid grey;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    box-shadow:5px 5px 0px rgba(0,0,0,.1);
+    transition: box-shadow 0.5s;
+    padding: 2% 5% 4% 5%;
+}
+
+/*berita lainnya*/
+.tabel {
+  background:white;
+ 	box-shadow:5px 5px 0px rgba(0,0,0,.1);
+  width: 80%;
+  float: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.berita-lain1{
+  background: url("D:/LittleTree/pics/berita/berita1.jpg") center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+.berita-lain2{
+  background: url("D:/LittleTree/pics/berita/berita2.jpg") center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+.berita-lain3{
+  background: url("D:/LittleTree/pics/berita/berita5.jpg") center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+.berita-lain4{
+  background: url("D:/LittleTree/pics/berita/berita4.jpg") center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.panel-heading {
+	text-align: left;
+}
+.bawah h5{
+	text-align: left;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanam.in</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+  <link href="css/mvnavbar.css" rel="stylesheet" type="text/css">  
+  <link href="css/navbar.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/utama.css" rel="stylesheet" type="text/css">
+  <link href="css/beritasimple.css" rel="stylesheet" type="text/css">
+  <link href="css/modalmasuk.css" rel="stylesheet" type="text/css">
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <style class="cp-pen-styles"></style>
+</head>
+
+<body id="page" data-spy="scroll">
+  
+<header id='demo'>
+  <div class='demo-bg'></div>
+
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse" id="navbar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="#page"> <img src="pics/logo.png" class="img-responsive"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="#myModal2"> <button class="btn btnaja btn-success" data-toggle="modal" data-target=" #myModal2">Halo, Rizal</button></a> 
+        <!-- </li>
+        <li> -->
+          <a href="index.html"><button class="btn btnaja btn-danger">Logout</button></a>
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+<!-- MODAL SIDEBAR -->
+  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class=" text-center">
+          <a href="profile.html"><img class="img-circle bulat" src="pics/sidebar/foto.png" height="120" width="120"></a>
+          <h3> RIZAL </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+        <a href="#"><button class="btn btn-warning btn-block" style="border-radius: 0px; ">Need Help</button></a>
+        <hr>
+          <h4 style="text-align:center"> My New Plant</h4>
+          <!-- <div class=" text-center"> -->
+            <img class="img-circle bulat" src="pics/berita/bg-top.png" height="70" width="70">
+            <!-- </div> -->
+            <p><strong> Einstein Plant<br>(Durian) </strong></p>
+            <p> Hutan Irian </p>
+
+            <hr>
+              <a href="area.html"><button class="btn btn-primary btn-block"> </span> Add New Investment</button></a>
+            <hr>
+
+          <h4 style="text-align:center"> Detail Investment </h4>
+          <div class="col-sm-6 text-left">
+            <p><strong>Date </strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>11/09/2017</p>
+          </div>
+
+          <div class="col-sm-6 text-left">
+            <p><strong>Cost</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <p>Rp. 1.500.000</p>
+          </div>
+
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+<!-- MODAL -->
+ <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4><span class="glyphicon glyphicon-user"></span>   LOGIN </h4>
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required="">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Your password" required="">
+              </div>
+            </form>
+                <a href="area.html" style="text-decoration:none; color:black; border-radius: 0px;"><button class="btn btn-block btn-success">LOGIN
+                  <span class="glyphicon"></span></button> 
+                </a>
+                <a href="#"><i class="sandi"> Forget your password ? </i> </a>
+          </div>
+
+          <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary btn-default ">
+                <i class="fa fa-facebook" aria-hidden="true"></i> Login  with Facebook
+              </a>
+
+              <a href="#" class="btn btn-danger btn-default">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>Login with Google+
+              </a>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+</header>
+
+<!-- DEFINISI LITTLE TREE -->
+<div class="bg-hijau">
+  <div class="container-fluid">
+  
+    <div class="judulLT">Tanam.in</div>
+    <br>
+        <div class="definisiJudulLT">
+           Interactive and Scalable Cloud Farming Platform
+        </div>
+        <br><br><br>
+  </div>
+<!-- DIDAPATKAN -->
+<div class="bg-abuabu">
+  <div class="container-fluid"><br>
+    <div class="judulDiDapatkan"> What You Get?</div>
+     <br><br>
+      <div class="row slideanim " id="bulat">
+          <div class="col-sm-4">
+            <img src="pics/3icons/nama-1.png" class="cool">
+              <h3>Giving Name The Tree</h3>
+              <div class="sub-nama"> Each tree will get name as your wish</div>
+          </div>    
+
+          <div class="col-sm-4">
+            <img src="pics/3icons/monitor-2.png" class="cool">
+              <h3>Monitoring tree status</h3> 
+              <div class="sub-nama"> You can monitor tree growth<br> and health status</div>
+          </div>    
+
+          <div class="col-sm-4">
+            <img src="pics/3icons/info-3.png" class="cool">
+              <h3>Latest Information</h3>
+              <div class="sub-nama">     Get up-to-date on the development<br> of tree planting locations</div>
+          </div>   
+
+      </div>
+  </div>
+</div>
+
+<!-- DILAKUKAN -->
+<div class="container-fluid"><br>
+  <div class="judulDilakukan">What Will You Do?</div>
+  <br><br>
+    <div class="row slideanim " id="bulat">
+      <img src="pics/3icons/panah-2.png" class="panah">
+<!--       <div class=" col-sm-offset-1 col-sm-2">
+        <img src="pics/4icons/pilih-daerahpohon.png">
+        <h3>Pilih Daerah <br> Pohon Anda</h3>
+     </div>  
+
+      <div class="col-sm-2">
+        <img src="pics/4icons/kasih-nama.png">
+        <h3>Beri Nama <br> Pohon Anda</h3>
+     </div>    
+      
+      <div class="col-sm-2">
+        <img src="pics/3icons/uang.png">
+        <h3>Donasikan <br> Uang Anda</h3>
+      </div>
+      
+      <div class="col-sm-2">   
+        <img src="pics/3icons/tangan-pohon.png">
+          <h3>Pantau <br> Pohon Anda</h3>
+      </div>
+  
+      <div class="col-sm-2">
+        <img src="pics/3icons/hutan.png">
+          <h3>Selamatkan <br>  Hutan Indonesia</h3>
+      </div> -->
+    </div>
+</div>
+
+<div class="bg-abuabu">
+<div class="container-fluid text-center" id="judul">
+  <h2 style="font-size:40px; color:black">Headline News</h2> 
+<!-- </div> -->
+
+<!-- <div class="container-fluid text-center"> -->
+<div class="row threed-section">
+    <div class="carousel carousel-multiItem slide" id="carousel-item">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="col-xs-12 col-sm-4 col-md-4 hover">
+            <a href="berita.html" ><img src="pics/berita/bg-top.png" class="img-responsive"></a>
+            <div class="data-enter text-left" id="data-enter">
+
+              <h3><a>Pemerintah Tambah Luasan Lahan ...</a></h3>
+
+              <!-- <span class="date">May 29,2015</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-4 hover">
+            <a href="berita.html" ><img src="pics/berita/berita7.jpg" class="img-responsive"></a>
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Pemerintah Kembali Membangun ...</a></h3>
+
+              <!-- <span class="date">May 29,2015</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-4 hover">
+            <a href="berita.html" ><img src="pics/berita/berita4.jpg" class="img-responsive"></a>
+
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Hutan Tropis, hutan yang membuat ...</a></h3>
+
+<!--               <span class="date">May 29,2015</span>
+              <span class="comment">0 Comment</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-4 hover">
+            <a href="berita.html" ><img src=" pics/berita/berita8.jpg" class="img-responsive"></a>
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Reboisasi di Daerah Hutan ...</a></h3>
+
+<!--               <span class="date">May 29,2015</span>
+              <span class="comment">0 Comment</span> -->
+            </div>
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-4 hover ">
+            <a href="berita.html" ><img src="pics/berita/berita2.jpg" class="img-responsive"></a>
+
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Musim Kemarau Berkepanjangan ...</a></h3>
+
+<!--               <span class="date">May 29,2015</span>
+              <span class="comment">0 Comment</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-4  hover ">
+            <a href="berita.html" ><img src="pics/berita/berita1.jpg" class="img-responsive"></a>
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Terdapat Sejumlah Titik Rawan Api...</a></h3>
+
+<!--               <span class="date">May 29,2015</span>
+              <span class="comment">0 Comment</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12  col-sm-4 col-md-4 hover ">
+            <a href="berita.html" ><img src="pics/berita/berita5.jpg" class="img-responsive"></a>
+
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Indonesia Dijuluki Sebagai Negara...</a></h3>
+
+<!--               <span class="date">May 29,2015</span>
+              <span class="comment">0 Comment</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-4  hover ">
+            <a href="berita.html" ><img src="pics/berita/berita6.jpg" class="img-responsive"></a>
+            <div class="data-enter" id="data-enter">
+
+              <h3><a>Penghijauan Hutan Bakau...</a></h3>
+<!-- 
+              <span class="date">May 29,2015</span>
+              <span class="comment">0 Comment</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-item" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+      <a class="right carousel-control" href="#carousel-item" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
+<div class="bg-hijau">
+    <div class="container-fluid ">
+      <div class="statistik">Statistics</div>
+      <br>
+         <img class="gambarStatistik img-responsive" src="pics/counter/counter.png">
+      </div>
+</div>
+
+  <div class="bg-abuabu">
+    <div class="container-fluid">
+      <div class="testimoni">What do they say?</div>
+      <br><br>
+        <div class="row slideanim " id="bulat">
+<!--           <div id="komen" class="col-sm-4">
+          <div class="komentar">
+            <div class="judul-komentar">Tri Astuti <br>Lembaga Mahasiswa Kehutanan</div>
+            <p>" LittleTree sangat membantu kami dalam mencari dana penggalangan pohon yang susah kami lakukan secara manual. Dengan LittleTree kami dapat mendapatkan dana untuk program penanaman pohon di Kulon Progo"</p>
+            <img class="gambar-komentar" src="pics/4icons/kasih-nama.png">
+          </div>
+          </div> -->
+
+          <div id="komen" class="col-sm-4">
+            <div class="komentar">
+            <img src="pics/orang/dosen.png">
+            <div class="judul-komentar">Bu Ratih </div>
+            <div class="sub-komentar"><i>"Lecturer of Forestry Sociology"</i></div>
+            <br>
+              <p> "Tanam.in is very useful for connecting empty landowners to people who want to plant trees, which can expand indonesia’s forests."</p>
+              
+            </div>  
+          </div>
+
+          <div id="komen" class="col-sm-4">
+            <div class="komentar">
+            <img src="pics/orang/aly.png">
+            <div class="judul-komentar">Bier Aly</div>
+            <div class="sub-komentar"><i>"College student"</i></div> <br>
+            <p>"After investing in Tanam.in, I visited the tree planting site. The management is very good and my tree is well maintained, Tanam.in provides new knowledge about farming"</p>
+            
+            </div>
+          </div>
+
+          <div id="komen" class="col-sm-4">
+            <div class="komentar">
+            <img class="gambar-komentar" src="pics/orang/pemerintah.png">
+             <div class="judul-komentar">Pak Sri Heriyanto</div>
+             <div class="sub-komentar"><i>"Provincial Forest Rehabilitation and Protection Officer"</i></div><br>
+            <p >"Tanam.in is very supportive of the government program i.e developing  potential lands. The  Presence of this program makes people will be more productive by planting trees and preserving the environment"</p>
+            
+            </div>
+          </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bg-hijau">
+    <div class="container-fluid ">
+      <div class="galeri">Galery</div>
+        <br>
+        <div class="gambar-galeri">
+          <!-- <div class="col-sm-12"> -->
+          <img src="pics/galeri/gambar1.jpg" class="all-pics">
+          <img src="pics/galeri/gambar2.jpg" class="all-pics">
+          <img src="pics/galeri/gambar3.jpg" class="all-pics">
+          <img src="pics/galeri/gambar4.jpg" class="all-pics">
+          <img src="pics/galeri/gambar5.jpg" class="all-pics">
+          <img src="pics/galeri/gambar6.jpg" class="all-pics">
+          <!-- </div> -->
+        </div>
+    </div>  
+</div> 
+
+  <div class="bg-abuabu">
+
+  </div>  
+
+  
+<!--     <div class="container-fluid text-center">
+      <div class="bagikan">Bagikan Informasi Ini </div>
+      <br>
+      <div class="row sosial">
+        <ul>
+          <a href="#"><img src="pics/logo/fb.png" width="40" height="40"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="40" height="40"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="40" height="40"> </a>
+        </ul>  
+      </div>
+    </div> -->
+  
+  </div>
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+<br>
+  <div class="keatas">
+    <a class="up-arrow" href="#page" data-toggle="tooltip" title="Kembali Keatas">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br>
+  </div>
+
+  <div class="langganan">
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Subscribe </h3>
+        
+          <p>Find out the latest and useful information we will share with you</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Subscribe</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>About Us</h3>
+        
+        <p>
+            <a href="carakerja.html"> What we do?</a> <br>
+            <!-- <div class="space"> </div> -->
+            <a href="mitra.html"> Our Partners</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Help</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Find Us</h3>
+        <div class="text-left"><p>Direktorat Pengembangan Usaha Universitas XX<br>
+        Gedung Pusat XX, Bulaksumur, Indonesia<br></p>
+
+        <span class=" glyphicon glyphicon-envelope"></span> admin@tanamanin.com<br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+          <a href="#"><img src="pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="pics/logo/twitter.png" width="30" height="30"> </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+<script src="js/mvnavbar.js"></script>
+<script src="js/beritasimple.js"></script>
+<script src="js/animslide.js"></script>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > 300) {
+    $('#navbar').addClass('shrink');    
+  }
+  else {
+    $('#navbar').removeClass('shrink');
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+	font-family: 'Lato';
+	font-smooth: always;
+  	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e8ffd0;
+  font-size: 18px;
+}
+
+.pembayaran{
+	font-size: 35px;
+}
+
+.panel-body{
+	padding: 2% 5% 4% 5%;
+  box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+.panel-body h3{
+ font-size: 25px;
+}
+
+.radio-button {
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 14px 22px;
+  float: center;
+}
+
+.radio-button:hover{
+ opacity: 1; 
+ box-shadow: 0px 0px 1px #000000;
+
+}
+.rekening{
+  font-size: 16px;
+  font-weight: 10;
+}
+.col-sm-1{
+  width: 10px;
+}
+.col-sm-11{
+  width: 95% ;
+  /*margin-bottom: 1%; */
+  text-align: left;
+}
+.bank-button {
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 14px 22px;
+}
+
+.bank-button img{
+	height: 30px;
+	width: auto;
+}
+
+.perbankan{
+	text-align: left;
+}
+
+.perbankan h3{
+	font-size: 20px;
+}
+
+
+
+/*-------------------------------------------------------*/
+
+.tabs label {
+  display: inline-block;
+  padding: 3% 3% 3% 3%;
+  border: 2px solid #c1c1c1;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.tabs img{
+  height: 30px;
+  width: auto;
+} 
+
+.tabs input[name=tab],
+#tab-cont-1,
+#tab-cont-2,
+#tab-cont-3,
+#tab-cont-4 {
+  display: none;
+}
+.tabs #tab-btn-1:checked ~ #tab-cont-1,
+.tabs #tab-btn-2:checked ~ #tab-cont-2,
+.tabs #tab-btn-3:checked ~ #tab-cont-3,
+.tabs #tab-btn-4:checked ~ #tab-cont-4 {
+  display: block;
+}
+.tabs input[name=tab]:checked + label {
+  background: #5F9EA0;
+  color: #fff;
+}
+
+.btn-detail{
+  text-decoration: none;
+  border-radius: 0px;
+}

@@ -1,0 +1,39 @@
+body {
+	font-family: 'Lato';
+	font-smooth: always;
+  	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e8ffd0;
+	font-size: 17px;
+}
+
+.form{
+  background:white;
+  border-radius:6px;
+  padding :5%;
+  /*width:900px;*/
+  margin:50px auto;
+  box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+.form-group input,option{
+	font-size: 15px;
+}
+.judulForm {
+	font-size: 35px;
+	text-align: left;
+}
+
+/*Nama Data Daftar*/
+#daftar .col-sm-3{
+	text-align: left;
+}
+
+.btn-default,.daftar {
+	border-radius:  0;
+	white-space: normal;
+	text-decoration: none;
+	margin-bottom: 2%;
+	font-size: 16px;
+}
